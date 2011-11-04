@@ -35,7 +35,7 @@ function EventHandler() {
     var args = Utils.arrayify_arguments(arguments);
     var key = args.shift();
     
-    if (self.log_events) logger.log(self, key, args);
+    if (self.log_events) console.log(key, self, args);
     
     if (!(args instanceof Array)) { args = [args]; }
     
